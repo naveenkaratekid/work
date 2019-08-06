@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Build target: ${buildTarget}</echo>
+  <echo>Service Locator provided by: ${serviceLocator.provider.groupName}.${serviceLocator.provider.artifactName}:${serviceLocator.provider.artifactVersion}</echo>
+</target>
+</project>
