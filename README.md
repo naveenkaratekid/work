@@ -2,7 +2,7 @@ Welcome to the Python Calculator and String Manipulator App! Here are the functi
     
   1.   Greeting you by name
         PATH: CURRENT URL PATH + /name/
-            1. The page should return the text \"Hello There! *YOUR NAME*.</pre>" + "<pre>         
+            1. The page should return the text \"Hello There! *YOUR NAME*      
                 Example: name = "Marcus". 
                     Result on the page would show: "Hello there Marcus!
  
