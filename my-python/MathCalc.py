@@ -8,10 +8,10 @@ class MathCalc:
         self.op = op
 
     def calculate(self, a, b, op):
-        inta = int(self.a)
-        intb = int(self.b)
+        inta = float(self.a)
+        intb = float(self.b)
         if op == 'div':
-            if(b == 0 or b == '0'):
+            if(intb == 0 or b == '0'):
                 return "Cannot divide by zero. Try again"
             else:
                 return str(inta) + " / " + str(intb) + " = " + str((inta / intb))
@@ -20,7 +20,7 @@ class MathCalc:
             return str(inta) + " * " + str(intb) + " = " + str(inta * intb)
     
         elif op == '+':
-            return str(inta) + " + " + str(intb) + " = " + str(inta+intb)
+            return str(inta) + " + " + str(intb) + " = " + str(inta + intb)
     
         elif op == '-':
             return str(inta) + " - " + str(intb) + " = " + str(inta - intb)
@@ -31,7 +31,9 @@ class MathCalc:
         elif op == 'pow':
             powa = float(self.a)
             powb = float(self.b)
-            return str(powa) + " ^ " + str(powb) + " = " + str(pow(powa, powb))
+            print(powb)
+            print(powa)
+            return str(inta) + " ^ " + str(intb) + " = " + str(pow(inta, intb))
     
         elif op == 'hex':
             return str(inta) + " in hex is " + str(hex(inta)) + " | " + str(intb) + " in hex is " + hex(intb)
